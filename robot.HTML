@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title>Maze Generator</title>
+</head>
+<body>
+<div class="maze-container">
+    <h2>Maze Generator</h2>
+    <label for="maze-size">Enter maze size:</label>
+    <input type="number" id="maze-size" min="1" step="1">
+    <button onclick="generateMaze()">Generate Maze</button>
+    <button onclick="findShortestPath()"> Path</button>
+    <button onclick="moveRobot()">start Robot</button>
+    <button onclick="randomizeTerrain()">Randomize Terrain</button>
+    <button onclick="moveRobotToRandomCell()">Move Robot</button> 
+    <button onclick="chargeBattery()">Recharge Battery</button>
+    <div id="maze"></div>
+    <div id="battery">
+        Battery Level: <span id="battery-level">100%</span>
+    </div>
+</div>
+</body>
+</html>
